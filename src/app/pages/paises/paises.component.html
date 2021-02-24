@@ -5,6 +5,7 @@
   <a
     [routerLink]="['/pais', 'ci']"
     class="list-group-item list-group-item-action animated fadeIn"
-    >ABC</a
+    *ngFor="let pais of paises"
+    >{{ pais.name }}</a
   >
 </ul>
